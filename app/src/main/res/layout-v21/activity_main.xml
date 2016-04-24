@@ -45,6 +45,29 @@
             android:id="@+id/analogClock"
             android:layout_gravity="center_vertical" />
 
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical">
+
+             <TextView
+            android:id="@+id/tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="3"/>
+
+        <TimePicker
+            android:id="@+id/tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            />
+        </android.support.v7.widget.LinearLayoutCompat>
+
     </LinearLayout>
 
     <LinearLayout
