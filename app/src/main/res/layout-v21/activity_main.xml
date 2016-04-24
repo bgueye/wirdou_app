@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gueyendongo.wirdou.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_gravity="center_vertical"
+        android:background="#a6c7f77e">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cheikh_ahmed"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/titre_wird"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:textSize="30sp"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a6c7f77e"
+        android:orientation="horizontal">
+
+        <AnalogClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/analogClock"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a6c7f77e">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="1dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton01"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton02"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton03"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton11"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton12"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton13"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton21"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton22"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/bouton_width"
+                    android:layout_height="@dimen/bouton_hight"
+                    android:id="@+id/imageButton23"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="#00000000"/>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
