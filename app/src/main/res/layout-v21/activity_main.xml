@@ -6,6 +6,14 @@
     android:orientation="vertical"
     tools:context="com.gueyendongo.wirdou.MainActivity">
 
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#58FA58"
+        android:minHeight="?android:attr/actionBarSize" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,9 +51,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/analogClock"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
 
-        <android.support.v7.widget.LinearLayoutCompat
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -53,20 +62,13 @@
             android:gravity="center"
             android:layout_gravity="center_vertical">
 
-             <TextView
-            android:id="@+id/tv"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="3"/>
+            <TextView
+                android:id="@+id/tv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"/>
 
-        <TimePicker
-            android:id="@+id/tp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:timePickerMode="spinner"
-            />
-        </android.support.v7.widget.LinearLayoutCompat>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -75,6 +77,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#a6c7f77e">
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/surfaceView" />
 
         <TableLayout
             android:layout_width="wrap_content"
